@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 use Mojolicious::Lite;
 
-plugin 'GoogleAnalytics';
+plugin 'Disqus::Tiny';
 
 get '/' => sub {
   my $self = shift;
@@ -16,12 +16,13 @@ __DATA__
 % title 'Welcome';
 Welcome to the Mojolicious real-time web framework!
 
+<%= disqus_inc 'astokes' %>
+
 @@ layouts/default.html.ep
 <!DOCTYPE html>
 <html>
   <head>
   <title><%= title %></title>
-  <%= analytics_inc 'UA-23169268-1' %>
   </head>
   <body><%= content %>
   </body>

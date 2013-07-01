@@ -1,23 +1,23 @@
 NAME
-    Mojolicious::Plugin::GoogleAnalytics - Mojolicious Plugin
+    Mojolicious::Plugin::Disqus::Tiny- Mojolicious Plugin
 
 SYNOPSIS
       # Mojolicious
-      $self->plugin('GoogleAnalytics');
+      $self->plugin('Disqus::Tiny');
 
       # Mojolicious::Lite
-      plugin 'GoogleAnalytics';
+      plugin 'Disqus::Tiny';
 
       # In your layout template
-      <%= analytics_inc 'UA-32432-1' %>
-      </head> <!-- Make sure its just before closing head tag -->
+      <%= disqus_inc 'astokes' %>
 
 DESCRIPTION
-    Mojolicious::Plugin::GoogleAnalytics is a Mojolicious plugin. Inserts
-    Google Analytics code and associates your analytics id.
+    Mojolicious::Plugin::Disqus::Tiny is a Mojolicious plugin. Inserts
+    Disqus code and associates your forum id. If you need more control over
+    api please see Mojolicious::Plugin::Disqus.
 
 METHODS
-    Mojolicious::Plugin::GoogleAnalytics inherits all methods from
+    Mojolicious::Plugin::Disqus::Tiny inherits all methods from
     Mojolicious::Plugin and implements the following new ones.
 
   register
@@ -26,5 +26,6 @@ METHODS
     Register plugin in Mojolicious application.
 
 SEE ALSO
-    Mojolicious, Mojolicious::Guides, http://mojolicio.us.
+    Mojolicious::Plugin::Disqus, Mojolicious, Mojolicious::Guides,
+    http://mojolicio.us.
 

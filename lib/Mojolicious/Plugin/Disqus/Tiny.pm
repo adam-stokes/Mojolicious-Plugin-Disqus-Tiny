@@ -15,13 +15,14 @@ sub register {
 
     $app->helper(
         disqus_inc => sub {
-            my $self         = shift;
+            my $self     = shift;
             my $forum_id = shift;
 
             die "No disqus ID defined" unless defined $forum_id;
             $self->render(
                 template => $self->disqus->template,
                 partial  => 1,
+                forum_id => $forum_id
             );
         }
     );
@@ -33,17 +34,16 @@ __DATA__
 
 @@ disqus_template.html.ep
 
-%= javascript begin
-   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-   var disqus_shortname = '${forum_id}'; // required: replace example with your forum shortname
-
-   /* * * DON'T EDIT BELOW THIS LINE * * */
+<script type="text/javascript">
+   var disqus_shortname = '<%= $forum_id %>';
    (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
    })();
-%= end
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 __END__
 
@@ -59,12 +59,12 @@ Mojolicious::Plugin::Disqus::Tiny- Mojolicious Plugin
   # Mojolicious::Lite
   plugin 'Disqus::Tiny';
 
-  # In your layout template
+  # In the template where comments should be
   <%= disqus_inc 'astokes' %>
 
 =head1 DESCRIPTION
 
-L<Mojolicious::Plugin::Disqus::Tiny> is a L<Mojolicious> plugin. Inserts Disqus code and associates your forum id. If you need more control over api please see L<Mojolicious::Plugin::Disqus>.
+L<Mojolicious::Plugin::Disqus::Tiny> is a L<Mojolicious> plugin. Inserts Disqus code and associates your forum id. If you need more control over api please see L<Mojolicious::Plugin::Disqus>. In order to get the B<shortname> visit L<https://disqus.com> and check your dashboard.
 
 =head1 METHODS
 
