@@ -1,0 +1,30 @@
+NAME
+    Mojolicious::Plugin::GoogleAnalytics - Mojolicious Plugin
+
+SYNOPSIS
+      # Mojolicious
+      $self->plugin('GoogleAnalytics');
+
+      # Mojolicious::Lite
+      plugin 'GoogleAnalytics';
+
+      # In your layout template
+      <%= analytics_inc 'UA-32432-1' %>
+      </head> <!-- Make sure its just before closing head tag -->
+
+DESCRIPTION
+    Mojolicious::Plugin::GoogleAnalytics is a Mojolicious plugin. Inserts
+    Google Analytics code and associates your analytics id.
+
+METHODS
+    Mojolicious::Plugin::GoogleAnalytics inherits all methods from
+    Mojolicious::Plugin and implements the following new ones.
+
+  register
+      $plugin->register(Mojolicious->new);
+
+    Register plugin in Mojolicious application.
+
+SEE ALSO
+    Mojolicious, Mojolicious::Guides, http://mojolicio.us.
+
