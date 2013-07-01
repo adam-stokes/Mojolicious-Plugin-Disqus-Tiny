@@ -34,6 +34,7 @@ __DATA__
 
 @@ disqus_template.html.ep
 
+<div id="disqus_thread"></div>
 <script type="text/javascript">
    var disqus_shortname = '<%= $forum_id %>';
    (function() {
@@ -42,14 +43,13 @@ __DATA__
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
    })();
 </script>
-
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 __END__
 
 =head1 NAME
 
-Mojolicious::Plugin::Disqus::Tiny- Mojolicious Plugin
+Mojolicious::Plugin::Disqus::Tiny - Mojolicious Plugin
 
 =head1 SYNOPSIS
 
