@@ -4,7 +4,7 @@
       "Adam Stokes L<adamjs@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.2, Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131490",
+   "generated_by" : "Dist::Milla version v1.0.2, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -33,7 +33,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.021"
+            "Module::Build::Tiny" : "0.024"
          }
       },
       "develop" : {
