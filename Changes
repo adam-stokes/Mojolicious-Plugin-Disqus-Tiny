@@ -1,6 +1,7 @@
 Revision history for Mojolicious-Plugin-Disqus-Tiny
 
 {{$NEXT}}
+  - Remove strictures dependency
 
 1.000  2013-07-09 15:48:31 EDT
   - Stable release

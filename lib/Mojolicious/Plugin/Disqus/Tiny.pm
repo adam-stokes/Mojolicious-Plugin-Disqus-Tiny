@@ -2,10 +2,9 @@
 
 package Mojolicious::Plugin::Disqus::Tiny;
 
-use strictures 1;
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 has 'template' => 'disqus_template';
 
