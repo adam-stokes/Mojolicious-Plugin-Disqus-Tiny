@@ -5,3 +5,7 @@ on build => sub {
     requires 'Test::Mojo';
     requires 'Test::More';
 };
+
+on develop => sub {
+    requires 'Test::Pod', '1.41';
+};
