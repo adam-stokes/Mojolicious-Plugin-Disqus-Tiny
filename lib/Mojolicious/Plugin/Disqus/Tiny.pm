@@ -4,7 +4,7 @@ package Mojolicious::Plugin::Disqus::Tiny;
 
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '1.002';
+our $VERSION = '1.003';
 
 has 'template' => 'disqus_template';
 
