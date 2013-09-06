@@ -59,7 +59,7 @@
          "web" : "https://github.com/battlemidget/Mojolicious-Plugin-Disqus-Tiny"
       }
    },
-   "version" : "1.001",
+   "version" : "1.002",
    "x_contributors" : [
       "Adam Stokes <adam.stokes@ubuntu.com>"
    ]
