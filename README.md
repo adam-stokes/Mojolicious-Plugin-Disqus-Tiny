@@ -44,3 +44,7 @@ the same terms as the Perl 5 programming language system itself.
 # SEE ALSO
 
 [Mojolicious::Plugin::Disqus](http://search.cpan.org/perldoc?Mojolicious::Plugin::Disqus), [Mojolicious](http://search.cpan.org/perldoc?Mojolicious), [Mojolicious::Guides](http://search.cpan.org/perldoc?Mojolicious::Guides), [http://mojolicio.us](http://mojolicio.us).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/battlemidget/mojolicious-plugin-disqus-tiny/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
