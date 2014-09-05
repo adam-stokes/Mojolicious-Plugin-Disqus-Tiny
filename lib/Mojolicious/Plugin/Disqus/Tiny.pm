@@ -9,10 +9,10 @@ our $VERSION = '1.003';
 has 'template' => 'disqus_template';
 
 sub register {
-    my ($plugin, $app) = (shift, shift);
-    push @{$app->renderer->classes}, __PACKAGE__;
+    my ( $plugin, $app ) = ( shift, shift );
+    push @{ $app->renderer->classes }, __PACKAGE__;
 
-    $app->helper(disqus => sub {$plugin});
+    $app->helper( disqus => sub { $plugin } );
 
     $app->helper(
         disqus_inc => sub {
@@ -20,11 +20,8 @@ sub register {
             my $forum_id = shift;
 
             die "No disqus ID defined" unless defined $forum_id;
-            $self->render(
-                template => $self->disqus->template,
-                partial  => 1,
-                forum_id => $forum_id
-            );
+            $self->render_to_string( $self->disqus->template,
+                forum_id => $forum_id );
         }
     );
 }
@@ -37,7 +34,7 @@ __DATA__
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-   var disqus_shortname = '<%= $forum_id %>';
+   var disqus_shortname = '<%= stash("forum_id") %>';
    (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
