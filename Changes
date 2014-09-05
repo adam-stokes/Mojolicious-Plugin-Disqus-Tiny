@@ -1,7 +1,9 @@
 Revision history for Mojolicious-Plugin-Disqus-Tiny
 
 {{$NEXT}}
-- Fixes render partial deprecation #2
+
+1.004  2014-09-05 14:15:06 EDT
+  - Fixes render partial deprecation #2
 
 1.003  2013-09-06 16:37:01 EDT
   - Update deps
