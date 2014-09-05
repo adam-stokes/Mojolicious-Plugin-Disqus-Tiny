@@ -4,7 +4,7 @@
       "Adam Stokes L<adamjs@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Milla version v1.0.5, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060",
    "license" : [
       "perl_5"
    ],
@@ -33,7 +33,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.026"
+            "Module::Build::Tiny" : "0.037"
          }
       },
       "develop" : {
@@ -59,9 +59,13 @@
          "web" : "https://github.com/battlemidget/Mojolicious-Plugin-Disqus-Tiny"
       }
    },
-   "version" : "1.003",
+   "version" : "1.004",
    "x_contributors" : [
-      "Adam Stokes <adam.stokes@ubuntu.com>"
+      "Adam Stokes <adam.stokes@ubuntu.com>",
+      "Adam Stokes <battlemidget@users.noreply.github.com>",
+      "Bitdeli Chef <chef@bitdeli.com>",
+      "adam.stokes <battlemidget@users.noreply.github.com>",
+      "mudler <mudler@dark-lab.net>"
    ]
 }
 
